@@ -21,13 +21,19 @@ public class LoginTest {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
     @Test
-    public void logintest(){
-       driver.get("http://www.amazon.com");
+    public void logintest() {
+        driver.get("http://www.amazon.com");
 
-       driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Bags");
+        driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Bags");
         driver.findElement(By.xpath("//input[@type='submit'][1]")).click();
-        Assert.assertEquals(driver.getTitle(),"Amazon.com: Bags");
+        Assert.assertEquals(driver.getTitle(), "Amazon.com: Bags");
+    }
+    @Test
+            public void selectItem(){
+        driver.findElementByXPath("//img[@class='mediaCentralImage imageContainer__image'][1]").click();
 
+
+        }
 
     }
-}
+
