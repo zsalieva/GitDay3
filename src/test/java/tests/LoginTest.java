@@ -25,6 +25,15 @@ public class LoginTest {
         driver.findElement(By.xpath("//input[@type='submit'][1]")).click();
         Assert.assertEquals(driver.getTitle(), "Amazon.com: Bags");
     }
+    
+     @Test   // Another user added this file 
+    public void Search3() {
+        driver.get("http://www.amazon.com");
+
+        driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Laptops");
+        driver.findElement(By.xpath("//input[@type='submit'][1]")).click();
+        Assert.assertEquals(driver.getTitle(), "Amazon.com: Laptops");
+    }
     @Test
             public void selectItem() {
         driver.findElementByXPath("//img[@class='mediaCentralImage imageContainer__image'][1]").click();
