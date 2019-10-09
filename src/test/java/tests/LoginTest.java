@@ -1,10 +1,7 @@
 package tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -29,11 +26,14 @@ public class LoginTest {
         Assert.assertEquals(driver.getTitle(), "Amazon.com: Bags");
     }
     @Test
-            public void selectItem(){
+            public void selectItem() {
         driver.findElementByXPath("//img[@class='mediaCentralImage imageContainer__image'][1]").click();
-
-
+    }
+     @After
+             public void tearDown(){
+              driver.close();
+        }
         }
 
-    }
+
 
