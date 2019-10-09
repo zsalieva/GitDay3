@@ -18,7 +18,7 @@ public class LoginTest {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
     @Test
-    public void logintest() {
+    public void Search1() {
         driver.get("http://www.amazon.com");
 
         driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Bags");
@@ -37,6 +37,14 @@ public class LoginTest {
     @Test
             public void selectItem() {
         driver.findElementByXPath("//img[@class='mediaCentralImage imageContainer__image'][1]").click();
+    }
+    @Test
+    public void Search2() {
+        driver.get("http://www.amazon.com");
+
+        driver.findElement(By.id("twotabsearchtextbox")).sendKeys("iphone");
+        driver.findElement(By.xpath("//input[@type='submit'][1]")).click();
+        Assert.assertEquals(driver.getTitle(), "Amazon.com: iphone");
     }
      @After
              public void tearDown(){
