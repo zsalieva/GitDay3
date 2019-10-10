@@ -1,4 +1,4 @@
-package tests;
+package Git_tests;
 
 public @interface BeforeMethod {
 }
