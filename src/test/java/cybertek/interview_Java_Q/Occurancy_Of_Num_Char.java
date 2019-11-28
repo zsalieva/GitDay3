@@ -3,7 +3,7 @@ package cybertek.interview_Java_Q;
 public class Occurancy_Of_Num_Char {
 
     public static String StrNum(String str){
-       //  final int MAX_CHAR = 256;
+                                             //  final int MAX_CHAR = 256;
         String result ="";
         int count =1;
 

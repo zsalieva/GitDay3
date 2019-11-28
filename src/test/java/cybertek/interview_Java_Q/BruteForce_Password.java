@@ -2,7 +2,7 @@ package cybertek.interview_Java_Q;
 
 import java.util.Scanner;
 
-public class BruteForce {
+public class BruteForce_Password {
 
     public static void main(String[] args) {
         String Expected_username = "admin";
