@@ -30,4 +30,20 @@ public class Multi_D_arry {
         System.out.println("length of first array inside nums "+ nums[0].length);
         System.out.println("length of second array inside nums "+ nums[1].length);
 
+
+        double[][]prices =new double[3][];
+        prices[0]=new double[]{12.3,45.5,67.7,67.7};
+        prices[1]=new double[]{23.4,566.6};
+        prices[2]=new double[5];
+        prices[2][0]=23.4;
+        prices[2][1]=44.5;
+        prices[2][2]=55.6;
+        prices[2][3]=567.7;
+        prices[2][4]=65.7;
+        System.out.println(Arrays.toString(prices[0]));
+        System.out.println(Arrays.toString(prices[1]));
+        System.out.println(Arrays.toString(prices[2]));
+        System.out.println("-------------DeepToString to print multi D array---------------");
+        System.out.println(Arrays.deepToString(prices));
+
 }}
