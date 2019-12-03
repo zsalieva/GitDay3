@@ -13,7 +13,7 @@ public class Random {
 
         int[]nums = new int[count];
         for(int i=0; i<count; i++) {
-       //     nums[i] = ran.nextInt(100);
+       //    nums[i] = ran.nextInt(100);
         }
         for (int n: nums){
             System.out.println(n+",");
