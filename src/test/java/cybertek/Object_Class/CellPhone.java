@@ -1,4 +1,4 @@
-package cybertek.ArrayList;
+package cybertek.Object_Class;
 
 public class CellPhone {
 
@@ -13,6 +13,7 @@ public class CellPhone {
 
     }
     public void text(){
-        System.out.println("Texting");
+        System.out.println("Texting a message");
     }
+
 }
