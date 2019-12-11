@@ -21,17 +21,7 @@ public class reverseArray {
 
 
 
-    public static int findMax(ArrayList<Integer> a) {
 
-        int max=Integer.MIN_VALUE;
-
-        for(int each: a)
-
-            max = Math.max(max, each);
-
-        return max;
-
-    }
 
         }
 
